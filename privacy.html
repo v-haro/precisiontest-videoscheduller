@@ -1,51 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - videoScheduler</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy for videoScheduler</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
-    h1, h2 { color: #111; }
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #18212f;
+      --muted: #5b6472;
+      --line: #e6ebf2;
+      --accent: #4f46e5;
+      --accent-soft: #eef2ff;
+      --shadow: 0 14px 40px rgba(16, 24, 40, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f7f9fc 0%, #eef3f9 100%);
+      color: var(--text);
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+
+    .container {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 40px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .brand {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: 38px;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--muted);
+      margin: 0 0 24px;
+    }
+
+    .meta {
+      display: inline-block;
+      margin-bottom: 26px;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+
+    p, li {
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text);
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .footer {
+      margin-top: 36px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        padding: 28px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <div class="container">
+      <div class="topbar">
+        <div class="brand">videoScheduler · PrecisionTestLLC</div>
+        <div class="nav">
+          <a href="/">Home</a>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
+      </div>
 
-<h1>Privacy Policy</h1>
-<p><strong>Effective Date:</strong> April 2026</p>
+      <h1>Privacy Policy for videoScheduler</h1>
 
-<p>This Privacy Policy explains how <strong>videoScheduler</strong>, operated by <strong>PrecisionTestLLC</strong>, collects, uses, and protects information.</p>
+      <div class="meta"><strong>Effective Date:</strong> April 2026</div>
 
-<h2>1. Information We Collect</h2>
-<p>We may collect limited information required to operate the service, including:</p>
-<ul>
-  <li>Access tokens from connected platforms (e.g., TikTok)</li>
-  <li>Video metadata (titles, captions)</li>
-  <li>Media URLs for content publishing</li>
-</ul>
+      <p class="lead">
+        This Privacy Policy applies to the <strong>videoScheduler</strong> application and
+        service operated by <strong>PrecisionTestLLC</strong>.
+      </p>
 
-<h2>2. How We Use Information</h2>
-<p>Information is used solely to enable automated publishing and scheduling of content as requested by the user.</p>
+      <h2>1. Information We Collect</h2>
+      <p>
+        We may collect limited information required to operate videoScheduler, including:
+      </p>
+      <ul>
+        <li>Access tokens or connection credentials from connected platforms, such as TikTok</li>
+        <li>Video metadata, including titles, descriptions, and captions</li>
+        <li>Media URLs or file references used for content publishing workflows</li>
+      </ul>
 
-<h2>3. Data Sharing</h2>
-<p>We do not sell or share personal data with third parties. Data is only used in connection with trusted services required for functionality (e.g., APIs, hosting).</p>
+      <h2>2. How We Use Information</h2>
+      <p>
+        Information collected by videoScheduler is used solely to enable requested publishing,
+        scheduling, connection management, and related automation features initiated by the user.
+      </p>
 
-<h2>4. Data Security</h2>
-<p>We implement reasonable measures to protect user data and ensure secure handling of access credentials.</p>
+      <h2>3. Data Sharing</h2>
+      <p>
+        PrecisionTestLLC does not sell personal data. Information is only used in connection
+        with trusted services and infrastructure necessary to operate videoScheduler, such as
+        hosting providers, APIs, and connected platform services.
+      </p>
 
-<h2>5. Data Retention</h2>
-<p>Data is retained only as long as necessary to provide the service.</p>
+      <h2>4. Data Security</h2>
+      <p>
+        We implement reasonable administrative and technical safeguards to protect user data and
+        support secure handling of credentials and publishing-related information.
+      </p>
 
-<h2>6. User Control</h2>
-<p>Users control which accounts they connect and may revoke access at any time.</p>
+      <h2>5. Data Retention</h2>
+      <p>
+        Data is retained only for as long as necessary to provide and support videoScheduler
+        and its intended functionality.
+      </p>
 
-<h2>7. Changes to Policy</h2>
-<p>We may update this Privacy Policy from time to time.</p>
+      <h2>6. User Control</h2>
+      <p>
+        Users control which accounts they connect to videoScheduler and may revoke access or
+        discontinue use of the service at any time.
+      </p>
 
-<h2>8. Contact</h2>
-<p>If you have questions, contact:</p>
-<p><strong>Email:</strong> victor.haro@gmail.com</p>
-<p><strong>Company:</strong> PrecisionTestLLC</p>
+      <h2>7. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Continued use of videoScheduler
+        after updated terms are published indicates acceptance of the revised policy.
+      </p>
 
+      <h2>8. Contact</h2>
+      <p>
+        If you have questions regarding this Privacy Policy for videoScheduler, please contact:
+      </p>
+      <ul>
+        <li><strong>Email:</strong> victor.haro@gmail.com</li>
+        <li><strong>Company:</strong> PrecisionTestLLC</li>
+      </ul>
+
+      <div class="footer">
+        © 2026 videoScheduler · Operated by PrecisionTestLLC
+      </div>
+    </div>
+  </div>
 </body>
 </html>

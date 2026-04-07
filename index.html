@@ -1,35 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>videoScheduler</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
-    h1, h2 { color: #111; }
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #18212f;
+      --muted: #5b6472;
+      --line: #e6ebf2;
+      --accent: #4f46e5;
+      --accent-soft: #eef2ff;
+      --shadow: 0 14px 40px rgba(16, 24, 40, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f7f9fc 0%, #eef3f9 100%);
+      color: var(--text);
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 40px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 44px;
+      line-height: 1.05;
+      margin: 0 0 14px;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--muted);
+      margin: 0 0 24px;
+      max-width: 760px;
+    }
+
+    .company {
+      display: inline-block;
+      padding: 10px 14px;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--text);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 28px 0 34px;
+    }
+
+    .card {
+      background: #fbfcfe;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 13px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.03);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--text);
+      border-color: var(--line);
+    }
+
+    .btn-secondary:hover {
+      background: #fafbff;
+    }
+
+    .section {
+      margin-top: 28px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 28px;
+    }
+
+    .section h3 {
+      margin: 0 0 14px;
+      font-size: 22px;
+    }
+
+    .section p,
+    .section li {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    .section ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 28px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="badge">Official Website</div>
+      <h1>videoScheduler</h1>
+      <p class="subtitle">
+        videoScheduler is a cloud-based application that helps users manage controlled,
+        user-authorized video publishing workflows across social media platforms,
+        including TikTok.
+      </p>
 
-<h1>videoScheduler</h1>
+      <div class="company">
+        Operated by <strong>PrecisionTestLLC</strong> · Contact: <strong>victor.haro@gmail.com</strong>
+      </div>
 
-<p><strong>videoScheduler</strong> is a cloud-based application operated by <strong>PrecisionTestLLC</strong> that allows users to automate video publishing workflows across social media platforms, including TikTok.</p>
+      <div class="grid">
+        <div class="card">
+          <h2>Publishing Workflows</h2>
+          <p>
+            Supports structured video scheduling and publishing flows using user-provided
+            content, captions, and approved platform integrations.
+          </p>
+        </div>
+        <div class="card">
+          <h2>User-Authorized Access</h2>
+          <p>
+            All platform actions are intended to be initiated by the user through secure,
+            permission-based authentication and approved APIs.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Educational & Practical Use</h2>
+          <p>
+            Built to understand and implement real publishing workflows for creators and
+            small teams using controlled automation.
+          </p>
+        </div>
+      </div>
 
-<h2>Features</h2>
-<ul>
-  <li>Schedule and manage video publishing</li>
-  <li>User-authorized integration with TikTok APIs</li>
-  <li>Controlled automation workflows</li>
-</ul>
+      <div class="links">
+        <a class="btn btn-primary" href="/terms.html">Terms of Service</a>
+        <a class="btn btn-secondary" href="/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
 
-<h2>Legal</h2>
-<ul>
-  <li><a href="/terms.html">Terms of Service</a></li>
-  <li><a href="/privacy.html">Privacy Policy</a></li>
-</ul>
+    <div class="section">
+      <h3>About videoScheduler</h3>
+      <p>
+        videoScheduler is designed to help users automate and manage video publishing
+        tasks in a clear and controlled way. The service is intended for legitimate
+        publishing workflows where users authorize account access and control the content
+        they choose to publish.
+      </p>
+      <ul>
+        <li>Supports video publishing workflow preparation</li>
+        <li>Designed for user-authorized account connections</li>
+        <li>Operated as a lightweight business tool by PrecisionTestLLC</li>
+      </ul>
+    </div>
 
-<h2>Contact</h2>
-<p>Email: victor.haro@gmail.com</p>
-
+    <footer>
+      © 2026 videoScheduler · PrecisionTestLLC
+    </footer>
+  </div>
 </body>
 </html>
